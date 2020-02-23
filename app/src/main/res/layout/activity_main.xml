@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintViewJow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPlacar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvPlacar"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@color/placar"
+            android:backgroundTint="@color/placar"
+            android:gravity="center"
+            android:text="Placar"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvJogador01"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/jogador01"
+            android:text="Jogador 01"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPlacar01"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/jogador01"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvJogador02"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/jogador02"
+            android:backgroundTint="@color/jogador02"
+            android:text="Jogador 02"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPlacar02"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/jogador02"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutPlacar"
+        app:srcCompat="@drawable/logo_jow" />
+
+    <ImageView
+        android:id="@+id/ivRisco1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnuciaGanhador"
+        app:srcCompat="@drawable/riscos" />
+
+    <ImageView
+        android:id="@+id/ivRisco2"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivRisco3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRisco1"
+        app:srcCompat="@drawable/riscos" />
+
+    <ImageView
+        android:id="@+id/ivRisco3"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivRisco2"
+        app:layout_constraintTop_toTopOf="@+id/ivRisco2"
+        app:srcCompat="@drawable/riscos" />
+
+    <ImageView
+        android:id="@+id/ivRisco4"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivRisco5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRisco2"
+        app:srcCompat="@drawable/riscos" />
+
+    <ImageView
+        android:id="@+id/ivRisco5"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivRisco6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivRisco4"
+        app:layout_constraintTop_toTopOf="@+id/ivRisco4"
+        app:srcCompat="@drawable/riscos" />
+
+    <ImageView
+        android:id="@+id/ivRisco6"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivRisco5"
+        app:layout_constraintTop_toTopOf="@+id/ivRisco5"
+        app:srcCompat="@drawable/riscos" />
+
+    <TextView
+        android:id="@+id/tvAnuciaGanhador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/tvZerarPlacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zerar_placar"
+        android:text="Zerar Placar"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNovoJogo"
+        app:layout_constraintTop_toBottomOf="@+id/ivRisco10" />
+
+    <TextView
+        android:id="@+id/tvNovoJogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/novo_jogo"
+        android:lineSpacingExtra="18sp"
+        android:text="Novo Jogo"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvZerarPlacar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvZerarPlacar" />
+
+    <TextView
+        android:id="@+id/tvJogadorAtivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutPlacar" />
+
+    <ImageView
+        android:id="@+id/ivRisco10"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivRisco9"
+        app:layout_constraintTop_toTopOf="@id/ivRisco7"
+        app:srcCompat="@drawable/riscos" />
+
+    <ImageView
+        android:id="@+id/ivRisco7"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivRisco8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivRisco4"
+        app:srcCompat="@drawable/riscos" />
+
+    <ImageView
+        android:id="@+id/ivRisco8"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivRisco9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivRisco7"
+        app:layout_constraintTop_toTopOf="@id/ivRisco7"
+        app:srcCompat="@drawable/riscos" />
+
+    <ImageView
+        android:id="@+id/ivRisco9"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivRisco10"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivRisco8"
+        app:layout_constraintTop_toTopOf="@id/ivRisco7"
+        app:srcCompat="@drawable/riscos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

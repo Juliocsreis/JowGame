@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="placar">#37771F</color>
+    <color name="jogador02">#B90505</color>
+    <color name="jogador01">#8AA300</color>
+    <color name="zerar_placar">#FF9D00</color>
+    <color name="novo_jogo">#3DAA5A</color>
+</resources>

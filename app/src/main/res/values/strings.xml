@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Jow</string>
+    <string name="jogador_ativo">Jogador ativo é %1$s</string>
+</resources>
